@@ -1,0 +1,249 @@
+// Variables
+$remBase: 16px;
+
+// Functions
+@function pxtorem($size) {
+	$remSize: $size / $remBase;
+	@return #{$remSize}rem;
+}
+
+// Media Queries
+$breakpoint-sm: pxtorem(576px);
+$breakpoint-md: pxtorem(768px);
+$breakpoint-lg: pxtorem(992px);
+$breakpoint-xl: pxtorem(1200px);
+@mixin bp-xs {
+  @media (min-width: #{$breakpoint-xs}) {
+    @content;
+  }
+}
+@mixin bp-sm {
+  @media (min-width: #{$breakpoint-sm}) {
+    @content;
+  }
+}
+@mixin bp-md {
+  @media (min-width: #{$breakpoint-md}) {
+    @content;
+  }
+}
+@mixin bp-lg {
+  @media (min-width: #{$breakpoint-lg}) {
+    @content;
+  }
+}
+@mixin bp-xl {
+  @media (min-width: #{$breakpoint-xl}) {
+    @content;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.container, .container-fluid {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: pxtorem(15px);
+  padding-right: pxtorem(15px);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: pxtorem(-15px);
+  margin-right: pxtorem(-15px);
+}
+.column {
+  flex-grow: 1;
+  padding-left: pxtorem(15px);
+  padding-right: pxtorem(15px);
+}
+
+@include bp-sm {
+  .row {
+    &.sm-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+  .column {
+    // Widths
+    &.sm-25 {
+      flex: 0 0 25%;
+    }
+    &.sm-33 {
+      flex: 0 0 1/3*100%;
+    }
+    &.sm-50 {
+      flex: 0 0 50%;
+    }
+    &.sm-67 {
+      flex: 0 0 2/3*100%;
+    }
+    &.sm-75 {
+      flex: 0 0 75%;
+    }
+    &.sm-100 {
+      flex: 0 0 100%;
+    }
+    // Offsets
+    &.sm-offset-25 {
+      margin-left: 25%;
+    }
+    &.sm-offset-33 {
+      margin-left: 1/3*100%;
+    }
+    &.sm-offset-50 {
+      margin-left: 50%;
+    }
+    &.sm-offset-67 {
+      margin-left: 2/3*100%;
+    }
+    &.sm-offset-75 {
+      margin-left: 75%;
+    }
+  }
+}
+@include bp-md {
+  .container {
+    width: pxtorem(750px);
+  }
+  .row {
+    &.md-reverse {
+      flex-direction: row-reverse;
+    }   
+  }
+  .column {
+    flex-basis: initial;
+    // Widths
+    &.md-25 {
+      flex: 0 0 25%;
+    }
+    &.md-33 {
+      flex: 0 0 1/3*100%;
+    }
+    &.md-50 {
+      flex: 0 0 50%;
+    }
+    &.md-67 {
+      flex: 0 0 2/3*100%;
+    }
+    &.md-75 {
+      flex: 0 0 75%;
+    }
+    &.md-100 {
+      flex: 0 0 100%;
+    }
+    // Offsets
+    &.md-offset-25 {
+      margin-left: 25%;
+    }
+    &.md-offset-33 {
+      margin-left: 1/3*100%;
+    }
+    &.md-offset-50 {
+      margin-left: 50%;
+    }
+    &.md-offset-67 {
+      margin-left: 2/3*100%;
+    }
+    &.md-offset-75 {
+      margin-left: 75%;
+    }
+  }
+}
+@include bp-lg {
+  .container {
+    width: pxtorem(970px);
+  }
+  .row {
+    &.lg-reverse {
+      flex-direction: row-reverse;
+    }   
+  }
+  .column {
+    // Widths
+    &.lg-25 {
+      flex: 0 0 25%;
+    }
+    &.lg-33 {
+      flex: 0 0 1/3*100%;
+    }
+    &.lg-50 {
+      flex: 0 0 50%;
+    }
+    &.lg-67 {
+      flex: 0 0 2/3*100%;
+    }
+    &.lg-75 {
+      flex: 0 0 75%;
+    }
+    &.lg-100 {
+      flex: 0 0 100%;
+    }
+    // Offsets
+    &.lg-offset-25 {
+      margin-left: 25%;
+    }
+    &.lg-offset-33 {
+      margin-left: 1/3*100%;
+    }
+    &.lg-offset-50 {
+      margin-left: 50%;
+    }
+    &.lg-offset-67 {
+      margin-left: 2/3*100%;
+    }
+    &.lg-offset-75 {
+      margin-left: 75%;
+    }
+  }
+}
+@include bp-xl {
+  .container {
+    width: pxtorem(1170px);
+  }
+  .row {
+    &.xl-reverse {
+      flex-direction: row-reverse;
+    }   
+  }
+  .column {
+    // Widths
+    &.xl-25 {
+      flex: 0 0 25%;
+    }
+    &.xl-33 {
+      flex: 0 0 1/3*100%;
+    }
+    &.xl-50 {
+      flex: 0 0 50%;
+    }
+    &.xl-67 {
+      flex: 0 0 2/3*100%;
+    }
+    &.xl-75 {
+      flex: 0 0 75%;
+    }
+    &.xl-100 {
+      flex: 0 0 100%;
+    }
+    // Offsets
+    &.xl-offset-25 {
+      margin-left: 25%;
+    }
+    &.xl-offset-33 {
+      margin-left: 1/3*100%;
+    }
+    &.xl-offset-50 {
+      margin-left: 50%;
+    }
+    &.xl-offset-67 {
+      margin-left: 2/3*100%;
+    }
+    &.xl-offset-75 {
+      margin-left: 75%;
+    }
+  }
+}
