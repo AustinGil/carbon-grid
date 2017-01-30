@@ -59,6 +59,41 @@ $breakpoint-xl: pxtorem(1200px);
   flex-grow: 1;
   padding-left: pxtorem(15px);
   padding-right: pxtorem(15px);
+  // Widths
+  &.xs-25 {
+    flex: 0 0 25%;
+  }
+  &.xs-33 {
+    flex: 0 0 1/3*100%;
+  }
+  &.xs-50 {
+    flex: 0 0 50%;
+  }
+  &.xs-67 {
+    flex: 0 0 2/3*100%;
+  }
+  &.xs-75 {
+    flex: 0 0 75%;
+  }
+  &.xs-100 {
+    flex: 0 0 100%;
+  }
+  // Offsets
+  &.xs-offset-25 {
+    margin-left: 25%;
+  }
+  &.xs-offset-33 {
+    margin-left: 1/3*100%;
+  }
+  &.xs-offset-50 {
+    margin-left: 50%;
+  }
+  &.xs-offset-67 {
+    margin-left: 2/3*100%;
+  }
+  &.xs-offset-75 {
+    margin-left: 75%;
+  }
 }
 
 @include bp-sm {
