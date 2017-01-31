@@ -56,27 +56,36 @@ $breakpoint-xl: pxtorem(1200px);
   margin-right: pxtorem(-15px);
 }
 .column {
-  flex-grow: 1;
+  flex: 0 0 100%;
   padding-left: pxtorem(15px);
   padding-right: pxtorem(15px);
   // Widths
+  &.flex {
+    flex: 1;
+  }
   &.xs-25 {
     flex: 0 0 25%;
+    max-width: 25%;
   }
   &.xs-33 {
     flex: 0 0 1/3*100%;
+    max-width: 1/3*100%;
   }
   &.xs-50 {
     flex: 0 0 50%;
+    max-width: 50%;
   }
   &.xs-67 {
     flex: 0 0 2/3*100%;
+    max-width: 2/3*100%;
   }
   &.xs-75 {
     flex: 0 0 75%;
+    max-width: 75%;
   }
   &.xs-100 {
     flex: 0 0 100%;
+    max-width: 100%;
   }
   // Offsets
   &.xs-offset-25 {
@@ -104,23 +113,32 @@ $breakpoint-xl: pxtorem(1200px);
   }
   .column {
     // Widths
+    &.sm-flex {
+      flex: 1;
+    }
     &.sm-25 {
       flex: 0 0 25%;
+      max-width: 25%;
     }
     &.sm-33 {
       flex: 0 0 1/3*100%;
+      max-width: 1/3*100%;
     }
     &.sm-50 {
       flex: 0 0 50%;
+      max-width: 50%;
     }
     &.sm-67 {
       flex: 0 0 2/3*100%;
+      max-width: 2/3*100%;
     }
     &.sm-75 {
       flex: 0 0 75%;
+      max-width: 75%;
     }
     &.sm-100 {
       flex: 0 0 100%;
+      max-width: 100%;
     }
     // Offsets
     &.sm-offset-25 {
@@ -150,25 +168,33 @@ $breakpoint-xl: pxtorem(1200px);
     }   
   }
   .column {
-    flex-basis: initial;
     // Widths
+    &.md-flex {
+      flex: 1;
+    }
     &.md-25 {
       flex: 0 0 25%;
+      max-width: 25%;
     }
     &.md-33 {
       flex: 0 0 1/3*100%;
+      max-width: 1/3*100%;
     }
     &.md-50 {
       flex: 0 0 50%;
+      max-width: 50%;
     }
     &.md-67 {
       flex: 0 0 2/3*100%;
+      max-width: 2/3*100%;
     }
     &.md-75 {
       flex: 0 0 75%;
+      max-width: 75%;
     }
     &.md-100 {
       flex: 0 0 100%;
+      max-width: 100%;
     }
     // Offsets
     &.md-offset-25 {
@@ -199,23 +225,32 @@ $breakpoint-xl: pxtorem(1200px);
   }
   .column {
     // Widths
+    &.lg-flex {
+      flex: 1;
+    }
     &.lg-25 {
       flex: 0 0 25%;
+      max-width: 25%;
     }
     &.lg-33 {
       flex: 0 0 1/3*100%;
+      max-width: 1/3*100%;
     }
     &.lg-50 {
       flex: 0 0 50%;
+      max-width: 50%;
     }
     &.lg-67 {
       flex: 0 0 2/3*100%;
+      max-width: 2/3*100%;
     }
     &.lg-75 {
       flex: 0 0 75%;
+      max-width: 75%;
     }
     &.lg-100 {
       flex: 0 0 100%;
+      max-width: 100%;
     }
     // Offsets
     &.lg-offset-25 {
@@ -246,23 +281,32 @@ $breakpoint-xl: pxtorem(1200px);
   }
   .column {
     // Widths
+    &.xl-flex {
+      flex: 1;
+    }
     &.xl-25 {
       flex: 0 0 25%;
+      max-width: 25%;
     }
     &.xl-33 {
       flex: 0 0 1/3*100%;
+      max-width: 1/3*100%;
     }
     &.xl-50 {
       flex: 0 0 50%;
+      max-width: 50%;
     }
     &.xl-67 {
       flex: 0 0 2/3*100%;
+      max-width: 2/3*100%;
     }
     &.xl-75 {
       flex: 0 0 75%;
+      max-width: 75%;
     }
     &.xl-100 {
       flex: 0 0 100%;
+      max-width: 100%;
     }
     // Offsets
     &.xl-offset-25 {
@@ -282,3 +326,5 @@ $breakpoint-xl: pxtorem(1200px);
     }
   }
 }
+
+
