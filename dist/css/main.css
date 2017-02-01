@@ -11,13 +11,13 @@
   margin-right: auto;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem; }
-  .container.no-gutter, .container-fluid.no-gutter {
+  .container.fill, .container-fluid.fill {
     padding-left: 0;
     padding-right: 0; }
-    .container.no-gutter .row, .container-fluid.no-gutter .row {
+    .container.fill .row, .container-fluid.fill .row {
       margin-left: 0;
       margin-right: 0; }
-    .container.no-gutter .column, .container-fluid.no-gutter .column {
+    .container.fill .column, .container-fluid.fill .column {
       padding-left: 0;
       padding-right: 0; }
 
