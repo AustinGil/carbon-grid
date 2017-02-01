@@ -9,8 +9,7 @@
 
         <!--build:css css/styles.min.css-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/normalize/5.0.0/normalize.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/print.css">
+        <link rel="stylesheet" href="dist/css/styles.css">
         <!--endbuild-->
         <style>
             .custom-block {
@@ -30,13 +29,13 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="column">
+                <div class="column flex">
                     <div class="custom-block">.column</div>
                 </div>
-                <div class="column">
+                <div class="column flex">
                     <div class="custom-block">.column</div>
                 </div>
-                <div class="column">
+                <div class="column flex">
                     <div class="custom-block">.column</div>
                 </div>
             </div>
@@ -44,13 +43,41 @@
         <div class="container-fluid">
             <h2>Container Fluid</h2>
             <div class="row">
-                <div class="column">
+                <div class="column flex">
                     <div class="custom-block">.column</div>
                 </div>
-                <div class="column">
+                <div class="column flex">
                     <div class="custom-block">.column</div>
                 </div>
-                <div class="column">
+                <div class="column flex">
+                    <div class="custom-block">.column</div>
+                </div>
+            </div>
+        </div>
+        <div class="container no-gutter">
+            <h2>Container w/ No Gutters</h2>
+            <div class="row">
+                <div class="column flex">
+                    <div class="custom-block">.column</div>
+                </div>
+                <div class="column flex">
+                    <div class="custom-block">.column</div>
+                </div>
+                <div class="column flex">
+                    <div class="custom-block">.column</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid no-gutter">
+            <h2>Container Fluid w/ No Gutters</h2>
+            <div class="row">
+                <div class="column flex">
+                    <div class="custom-block">.column</div>
+                </div>
+                <div class="column flex">
+                    <div class="custom-block">.column</div>
+                </div>
+                <div class="column flex">
                     <div class="custom-block">.column</div>
                 </div>
             </div>
@@ -66,7 +93,7 @@
                     <div class="custom-block">Second .column</div>
                 </div>
             </div>
-            <p>.row.sm-rever (reverse order at small screens)</p>
+            <p>.row.sm-reverse (reverse order at small screens)</p>
             <div class="row sm-reverse">
                 <div class="column sm-50">
                     <div class="custom-block">First .column</div>
@@ -75,7 +102,7 @@
                     <div class="custom-block">Second .column</div>
                 </div>
             </div>
-            <p>.row.md-rever (reverse order at medium screens)</p>
+            <p>.row.md-reverse (reverse order at medium screens)</p>
             <div class="row md-reverse">
                 <div class="column sm-50">
                     <div class="custom-block">First .column</div>
@@ -145,11 +172,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="column xl-33">
-                    <div class="custom-block">.column.xl-33</div>
-                </div>
                 <div class="column xl-67">
                     <div class="custom-block">.column.xl-67</div>
+                </div>
+                <div class="column xl-33">
+                    <div class="custom-block">.column.xl-33</div>
                 </div>
             </div>
             <h2>Column Offsets</h2>
