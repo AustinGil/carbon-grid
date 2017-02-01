@@ -38,8 +38,15 @@ $breakpoint-xl: pxtorem(1200px);
   }
 }
 
-*, *:before, *:after {
+// Reset
+.container, .container-fluid {
   box-sizing: border-box;
+  &:before, &:after {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
 }
 
 .container, .container-fluid {
@@ -48,6 +55,18 @@ $breakpoint-xl: pxtorem(1200px);
   margin-right: auto;
   padding-left: pxtorem(15px);
   padding-right: pxtorem(15px);
+  &.no-gutter {
+    padding-left: 0;
+    padding-right: 0;
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .column {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 .row {
   display: flex;
