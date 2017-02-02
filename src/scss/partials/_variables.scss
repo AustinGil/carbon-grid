@@ -1,0 +1,41 @@
+$remBase: 16px;
+
+// Functions
+@function pxtorem($size) {
+	$remSize: $size / $remBase;
+	@return #{$remSize}rem;
+}
+
+// Media Queries
+$breakpoint-sm: pxtorem(576px);
+$breakpoint-md: pxtorem(768px);
+$breakpoint-lg: pxtorem(992px);
+$breakpoint-xl: pxtorem(1200px);
+@mixin bp-xs {
+  @media (min-width: #{$breakpoint-xs}) {
+    @content;
+  }
+}
+@mixin bp-sm {
+  @media (min-width: #{$breakpoint-sm}) {
+    @content;
+  }
+}
+@mixin bp-md {
+  @media (min-width: #{$breakpoint-md}) {
+    @content;
+  }
+}
+@mixin bp-lg {
+  @media (min-width: #{$breakpoint-lg}) {
+    @content;
+  }
+}
+@mixin bp-xl {
+  @media (min-width: #{$breakpoint-xl}) {
+    @content;
+  }
+}
+
+// Variables
+$spacing: pxtorem(15px);
