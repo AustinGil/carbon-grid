@@ -11,11 +11,18 @@
         <link rel="stylesheet" href="dist/css/carbon-grid.css">
         
         <style>
+            .page-header {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
             .custom-block {
                 margin-bottom: 15px;
                 padding: 15px;
                 color: #fff;
                 background: green;
+            }
+            .text-center {
+                text-align: center;
             }
         </style>
     </head>
@@ -23,6 +30,10 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <header class="page-header container text-center">
+            <h1>Carbon Grid</h1>
+            <h4>A simple, lightweight, and responsive CSS grid built on <a href="http://caniuse.com/#search=flexbox" target="_blank"><code class="inline-anchor">flexbox</code></a></h4>
+        </header>
         <div class="container">
             <h2>Container</h2>
         </div>
@@ -53,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <div class="container no-gutter">
+        <div class="container fill">
             <h2>Container w/ No Gutters</h2>
             <div class="row">
                 <div class="column flex">
@@ -67,7 +78,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid no-gutter">
+        <div class="container-fluid fill">
             <h2>Container Fluid w/ No Gutters</h2>
             <div class="row">
                 <div class="column flex">
