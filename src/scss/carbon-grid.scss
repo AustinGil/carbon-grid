@@ -31,7 +31,7 @@
   padding-left: $spacing;
   padding-right: $spacing;
   // Widths
-  &.flex {
+  &.auto {
     flex: 1;
   }
   &.xs-25 {
@@ -84,7 +84,7 @@
   }
   .column {
     // Widths
-    &.sm-flex {
+    &.sm-auto {
       flex: 1;
     }
     &.sm-25 {
@@ -140,7 +140,7 @@
   }
   .column {
     // Widths
-    &.md-flex {
+    &.md-auto {
       flex: 1;
     }
     &.md-25 {
@@ -196,7 +196,7 @@
   }
   .column {
     // Widths
-    &.lg-flex {
+    &.lg-auto {
       flex: 1;
     }
     &.lg-25 {
@@ -252,7 +252,7 @@
   }
   .column {
     // Widths
-    &.xl-flex {
+    &.xl-auto {
       flex: 1;
     }
     &.xl-25 {

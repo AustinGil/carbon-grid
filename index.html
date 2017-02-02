@@ -11,15 +11,25 @@
         <link rel="stylesheet" href="dist/css/carbon-grid.css">
         
         <style>
+            p, h1, h2, h3, h4, h5, h6 {
+                margin-top: 0;
+            }
             .page-header {
+                padding-top: 80px;
+                padding-bottom: 80px;
+            }
+            section {
                 padding-top: 50px;
                 padding-bottom: 50px;
+            }
+            section:nth-child(even) {
+                background: #eee;
             }
             .custom-block {
                 margin-bottom: 15px;
                 padding: 15px;
                 color: #fff;
-                background: green;
+                background: #777;
             }
             .text-center {
                 text-align: center;
@@ -34,168 +44,185 @@
             <h1>Carbon Grid</h1>
             <h4>A simple, lightweight, and responsive CSS grid built on <a href="http://caniuse.com/#search=flexbox" target="_blank"><code class="inline-anchor">flexbox</code></a></h4>
         </header>
-        <div class="container">
-            <h2>Container</h2>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="column flex">
-                    <div class="custom-block">.column</div>
-                </div>
-                <div class="column flex">
-                    <div class="custom-block">.column</div>
-                </div>
-                <div class="column flex">
-                    <div class="custom-block">.column</div>
+        <section>
+            <div class="container">
+                <h2 class="text-center">Containers</h2>
+            </div>
+            <div class="container">
+                <h3>Default container</h3>
+                <div class="row">
+                    <div class="column auto">
+                        <div class="custom-block">.column</div>
+                    </div>
+                    <div class="column auto">
+                        <div class="custom-block">.column</div>
+                    </div>
+                    <div class="column auto">
+                        <div class="custom-block">.column</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <h2>Container Fluid</h2>
-            <div class="row">
-                <div class="column flex">
-                    <div class="custom-block">.column</div>
-                </div>
-                <div class="column flex">
-                    <div class="custom-block">.column</div>
-                </div>
-                <div class="column flex">
-                    <div class="custom-block">.column</div>
-                </div>
-            </div>
-        </div>
-        <div class="container fill">
-            <h2>Container w/ No Gutters</h2>
-            <div class="row">
-                <div class="column flex">
-                    <div class="custom-block">.column</div>
-                </div>
-                <div class="column flex">
-                    <div class="custom-block">.column</div>
-                </div>
-                <div class="column flex">
-                    <div class="custom-block">.column</div>
+            <div class="container-fluid">
+                <h2>Container Fluid</h2>
+                <div class="row">
+                    <div class="column auto">
+                        <div class="custom-block">.column</div>
+                    </div>
+                    <div class="column auto">
+                        <div class="custom-block">.column</div>
+                    </div>
+                    <div class="column auto">
+                        <div class="custom-block">.column</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid fill">
-            <h2>Container Fluid w/ No Gutters</h2>
-            <div class="row">
-                <div class="column flex">
-                    <div class="custom-block">.column</div>
-                </div>
-                <div class="column flex">
-                    <div class="custom-block">.column</div>
-                </div>
-                <div class="column flex">
-                    <div class="custom-block">.column</div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <h2>Rows</h2>
-            <p>.row (default)</p>
-            <div class="row">
-                <div class="column sm-50">
-                    <div class="custom-block">First .column</div>
-                </div>
-                <div class="column sm-50">
-                    <div class="custom-block">Second .column</div>
+            <div class="container fill">
+                <h2>Container w/ No Gutters</h2>
+                <div class="row">
+                    <div class="column auto">
+                        <div class="custom-block">.column</div>
+                    </div>
+                    <div class="column auto">
+                        <div class="custom-block">.column</div>
+                    </div>
+                    <div class="column auto">
+                        <div class="custom-block">.column</div>
+                    </div>
                 </div>
             </div>
-            <p>.row.sm-reverse (reverse order at small screens)</p>
-            <div class="row sm-reverse">
-                <div class="column sm-50">
-                    <div class="custom-block">First .column</div>
-                </div>
-                <div class="column sm-50">
-                    <div class="custom-block">Second .column</div>
-                </div>
-            </div>
-            <p>.row.md-reverse (reverse order at medium screens)</p>
-            <div class="row md-reverse">
-                <div class="column sm-50">
-                    <div class="custom-block">First .column</div>
-                </div>
-                <div class="column sm-50">
-                    <div class="custom-block">Second .column</div>
+            <div class="container-fluid fill">
+                <h2>Container Fluid w/ No Gutters</h2>
+                <div class="row">
+                    <div class="column auto">
+                        <div class="custom-block">.column</div>
+                    </div>
+                    <div class="column auto">
+                        <div class="custom-block">.column</div>
+                    </div>
+                    <div class="column auto">
+                        <div class="custom-block">.column</div>
+                    </div>
                 </div>
             </div>
-            <h2>Grid Elements</h2>
-            <div class="row">
-                <div class="column xs-25">
-                    <div class="custom-block">.column.xs-25</div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>Rows</h2>
+                <p>.row (default)</p>
+                <div class="row">
+                    <div class="column sm-50">
+                        <div class="custom-block">First .column</div>
+                    </div>
+                    <div class="column sm-50">
+                        <div class="custom-block">Second .column</div>
+                    </div>
+                </div>
+                <p>.row.sm-reverse (reverse order at small screens)</p>
+                <div class="row sm-reverse">
+                    <div class="column sm-50">
+                        <div class="custom-block">First .column</div>
+                    </div>
+                    <div class="column sm-50">
+                        <div class="custom-block">Second .column</div>
+                    </div>
+                </div>
+                <p>.row.md-reverse (reverse order at medium screens)</p>
+                <div class="row md-reverse">
+                    <div class="column sm-50">
+                        <div class="custom-block">First .column</div>
+                    </div>
+                    <div class="column sm-50">
+                        <div class="custom-block">Second .column</div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="column xs-33">
-                    <div class="custom-block">.column.xs-33</div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>Grid Elements</h2>
+                <div class="row">
+                    <div class="column xs-25">
+                        <div class="custom-block">.column.xs-25</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column xs-33">
+                        <div class="custom-block">.column.xs-33</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column xs-50">
+                        <div class="custom-block">.column.xs-50</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column xs-67">
+                        <div class="custom-block">.column.xs-67</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column xs-75">
+                        <div class="custom-block">.column.xs-75</div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="column xs-50">
-                    <div class="custom-block">.column.xs-50</div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>Responsive Breakpoints</h2>
+                <div class="row">
+                    <div class="column sm-50">
+                        <div class="custom-block">.column.sm-50</div>
+                    </div>
+                    <div class="column sm-50">
+                        <div class="custom-block">.column.sm-50</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column md-33">
+                        <div class="custom-block">.column.md-33</div>
+                    </div>
+                    <div class="column md-33">
+                        <div class="custom-block">.column.md-33</div>
+                    </div>
+                    <div class="column md-33">
+                        <div class="custom-block">.column.md-33</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column lg-25">
+                        <div class="custom-block">.column.lg-25</div>
+                    </div>
+                    <div class="column lg-25">
+                        <div class="custom-block">.column.lg-25</div>
+                    </div>
+                    <div class="column lg-25">
+                        <div class="custom-block">.column.lg-25</div>
+                    </div>
+                    <div class="column lg-25">
+                        <div class="custom-block">.column.lg-25</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column xl-67">
+                        <div class="custom-block">.column.xl-67</div>
+                    </div>
+                    <div class="column xl-33">
+                        <div class="custom-block">.column.xl-33</div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="column xs-67">
-                    <div class="custom-block">.column.xs-67</div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>Column Offsets</h2>
+                <div class="row">
+                    <div class="column xs-100 sm-50 md-offset-25">
+                        <div class="custom-block">.column.sm-50.md-offset-25</div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="column xs-75">
-                    <div class="custom-block">.column.xs-75</div>
-                </div>
-            </div>
-            <h2>Responsive Breakpoints</h2>
-            <div class="row">
-                <div class="column sm-50">
-                    <div class="custom-block">.column.sm-50</div>
-                </div>
-                <div class="column sm-50">
-                    <div class="custom-block">.column.sm-50</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column md-33">
-                    <div class="custom-block">.column.md-33</div>
-                </div>
-                <div class="column md-33">
-                    <div class="custom-block">.column.md-33</div>
-                </div>
-                <div class="column md-33">
-                    <div class="custom-block">.column.md-33</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column lg-25">
-                    <div class="custom-block">.column.lg-25</div>
-                </div>
-                <div class="column lg-25">
-                    <div class="custom-block">.column.lg-25</div>
-                </div>
-                <div class="column lg-25">
-                    <div class="custom-block">.column.lg-25</div>
-                </div>
-                <div class="column lg-25">
-                    <div class="custom-block">.column.lg-25</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column xl-67">
-                    <div class="custom-block">.column.xl-67</div>
-                </div>
-                <div class="column xl-33">
-                    <div class="custom-block">.column.xl-33</div>
-                </div>
-            </div>
-            <h2>Column Offsets</h2>
-            <div class="row">
-                <div class="column xs-100 sm-50 md-offset-25">
-                    <div class="custom-block">.column.sm-50.md-offset-25</div>
-                </div>
-            </div>
-        </div>
+        </section>
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
