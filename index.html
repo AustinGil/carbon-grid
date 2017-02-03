@@ -356,7 +356,7 @@
                 <pre>
                     <code class="language-html">
 &lt;div class="container"&gt;
-    &lt;div class=&quot;row&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;row sm-reverse&quot;&gt;&lt;/div&gt;
         &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
             &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
@@ -364,7 +364,7 @@
             &lt;div class=&quot;example-content red&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;row sm-reverse&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;&lt;/div&gt;
         &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
             &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
@@ -375,8 +375,8 @@
 &lt;/div&gt;
                     </code>
                 </pre>
-                <p><strong>Example:</strong> On smallest screens red is second, but the order is reversed on the second row at the first breakpoint.</p>
-                <div class="row">
+                <p><strong>Example:</strong> On smallest screens red is second, but the order is reversed on the first row after the first breakpoint.</p>
+                <div class="row sm-reverse">
                     <div class="column">
                         <div class="example-content"></div>
                     </div>
@@ -384,7 +384,7 @@
                         <div class="example-content red"></div>
                     </div>
                 </div>
-                <div class="row sm-reverse">
+                <div class="row">
                     <div class="column">
                         <div class="example-content"></div>
                     </div>
