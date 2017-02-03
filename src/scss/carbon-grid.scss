@@ -31,9 +31,6 @@
   padding-left: $spacing;
   padding-right: $spacing;
   // Widths
-  &.auto {
-    flex: 1;
-  }
   &.xs-25 {
     flex: 0 0 25%;
     max-width: 25%;
@@ -83,6 +80,7 @@
     }
   }
   .column {
+    flex: 1;
     // Widths
     &.sm-auto {
       flex: 1;
