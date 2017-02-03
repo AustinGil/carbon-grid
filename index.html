@@ -44,19 +44,20 @@
                 margin-top: 30px
             }
             pre[class*="language-"] {
+                margin-bottom: 30px;
                 padding: 0 1em;
             }
             section:nth-child(even) {
                 background: #f7f7f7;
             }
-            .row {
-                margin-bottom: 30px;
-            }
             .example-content {
-                margin-bottom: 15px;
+                margin-bottom: 30px;
                 padding: 15px;
                 color: #fff;
-                background: #777;
+                background: #404040;
+            }
+            .example-content.red {
+                background: #4D0202;
             }
             .text-center {
                 text-align: center;
@@ -77,14 +78,8 @@
         </header>
         <section>
             <div class="container">
-                <h1 class="text-center">Container Types</h1>
-                <h3>Container</h3>
+                <h2>Container</h2>
                 <p>Wraps content to a consistent width.</p>
-            </div>
-            <div class="container">
-                <div class="example-content"></div>
-            </div>
-            <div class="container">
                 <pre>
                     <code class="language-html">
 &lt;div class="container"&gt;
@@ -94,13 +89,12 @@
                 </pre>
             </div>
             <div class="container">
-                <h2>Container Fluid</h2>
-                <p>Wraps content to for full width sections.</p>
-            </div>
-            <div class="container-fluid">
+                <p><strong>Example:</strong></p>
                 <div class="example-content"></div>
             </div>
             <div class="container">
+                <h2>Container Fluid</h2>
+                <p>Wraps content to for full width of sections.</p>
                 <pre>
                     <code class="language-html">
 &lt;div class="container-fluid"&gt;
@@ -108,79 +102,158 @@
 &lt;/div&gt;
                     </code>
                 </pre>
+                <p><strong>Example:</strong></p>
+            </div>
+            <div class="container-fluid">
+                <div class="example-content"></div>
             </div>
         </section>
         <section>
             <div class="container">
-                <h2>Rows</h2>
-                <p>.row (default)</p>
+                <h2>Responsive Flexible Grid</h2>
+                <p>Use rows and columns to create responsive flexbox grids</p>
+                <pre>
+                    <code class="language-html">
+&lt;div class="container"&gt;
+    &lt;div class=&quot;row&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+                <p><strong>Example:</strong></p>
                 <div class="row">
-                    <div class="column sm-50">
-                        <div class="example-content">First .column</div>
+                    <div class="column">
+                        <div class="example-content"></div>
                     </div>
-                    <div class="column sm-50">
-                        <div class="example-content">Second .column</div>
+                    <div class="column">
+                        <div class="example-content"></div>
                     </div>
-                </div>
-                <p>.row.sm-reverse (reverse order at small screens)</p>
-                <div class="row sm-reverse">
-                    <div class="column sm-50">
-                        <div class="example-content">First .column</div>
-                    </div>
-                    <div class="column sm-50">
-                        <div class="example-content">Second .column</div>
+                    <div class="column">
+                        <div class="example-content"></div>
                     </div>
                 </div>
-                <p>.row.md-reverse (reverse order at medium screens)</p>
-                <div class="row md-reverse">
-                    <div class="column sm-50">
-                        <div class="example-content">First .column</div>
+                <p>Because it is built on flexbox, the row will adjust to fit the number of columns automatically.</p>
+                <p><strong>Example 1 (2 columns):</strong></p>
+                <div class="row">
+                    <div class="column">
+                        <div class="example-content"></div>
                     </div>
-                    <div class="column sm-50">
-                        <div class="example-content">Second .column</div>
+                    <div class="column">
+                        <div class="example-content"></div>
+                    </div>
+                </div>
+                <p><strong>Example 2 (4 columns):</strong></p>
+                <div class="row">
+                    <div class="column">
+                        <div class="example-content"></div>
+                    </div>
+                    <div class="column">
+                        <div class="example-content"></div>
+                    </div>
+                    <div class="column">
+                        <div class="example-content"></div>
+                    </div>
+                    <div class="column">
+                        <div class="example-content"></div>
                     </div>
                 </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <h2>Grid Elements</h2>
+                <h2>Responsive Columns</h2>
+                <p>Set explicit widths for more control over column width at various breakpoints.</p>
                 <div class="row">
-                    <div class="column xs-25">
-                        <div class="example-content">.column.xs-25</div>
+                    <div class="column">
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Width</th>
+                                <th>in pixels</th>
+                            </tr>
+                            <tr>
+                                <td>xs</td>
+                                <td>0 - 36rem</td>
+                                <td>0 - 576px</td>
+                            </tr>
+                            <tr>
+                                <td>sm</td>
+                                <td>> 36rem</td>
+                                <td>> 576px</td>
+                            </tr>
+                            <tr>
+                                <td>md</td>
+                                <td>> 48rem</td>
+                                <td>> 768px</td>
+                            </tr>
+                            <tr>
+                                <td>lg</td>
+                                <td>> 62rem</td>
+                                <td>> 992px</td>
+                            </tr>
+                            <tr>
+                                <td>xl</td>
+                                <td>> 75rem</td>
+                                <td>> 1200px</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="column">
+                        <p>Available Widths: 20, 25, 30, 33, 40, 50, 60, 67, 70, 75, 80</p>
                     </div>
                 </div>
+                <p>Class names are structured like this:</p>
+                <p>&lt;div class="column {breakpoint}-{width}"&gt; or &lt;div class="column md-33"&gt;</p>
+                <pre>
+                    <code class="language-html">
+&lt;div class="container"&gt;
+    &lt;div class=&quot;row&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column sm-50 lg-25&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column sm-50 lg-25&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column sm-50 lg-25&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column sm-50 lg-25&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+                <p><strong>Example:</strong> Grid with 4 columns on large screens, 2 columns on middle screens, and 1 on smallest</p>
                 <div class="row">
-                    <div class="column xs-33">
-                        <div class="example-content">.column.xs-33</div>
+                    <div class="column sm-50 lg-25">
+                        <div class="example-content"></div>
+                    </div>
+                    <div class="column sm-50 lg-25">
+                        <div class="example-content"></div>
+                    </div>
+                    <div class="column sm-50 lg-25">
+                        <div class="example-content"></div>
+                    </div>
+                    <div class="column sm-50 lg-25">
+                        <div class="example-content"></div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="column xs-50">
-                        <div class="example-content">.column.xs-50</div>
+                <!--<p><strong>More complex examples:</strong></p><div class="row">
+                    <div class="column sm-67">
+                        <div class="example-content">.column.sm-67</div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="column xs-67">
-                        <div class="example-content">.column.xs-67</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column xs-75">
-                        <div class="example-content">.column.xs-75</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h2>Responsive Breakpoints</h2>
-                <div class="row">
-                    <div class="column sm-50">
-                        <div class="example-content">.column.sm-50</div>
-                    </div>
-                    <div class="column sm-50">
-                        <div class="example-content">.column.sm-50</div>
+                    <div class="column sm-33">
+                        <div class="example-content">.column.sm-33</div>
                     </div>
                 </div>
                 <div class="row">
@@ -215,47 +288,112 @@
                     <div class="column xl-33">
                         <div class="example-content">.column.xl-33</div>
                     </div>
+                </div>-->
+            </div>
+        </section>
+        <!--<section>
+            <div class="container">
+                <h2>Offsets</h2>
+                <p>Offset the columns from the left</p>
+                <div class="row">
+                    <div class="column xs-100 sm-50">
+                        <div class="example-content">.column.sm-50.md-offset-25</div>
+                    </div>
+                    <div class="column xs-100 sm-50">
+                        <div class="example-content">.column.sm-50.md-offset-25</div>
+                    </div>
+                </div>                
+            </div>
+        </section>-->
+        <section>
+            <div class="container">
+                <h2>Container Fill</h2>
+                <p>Remove spacing around containers and columns.</p>
+                <pre>
+                    <code class="language-html">
+&lt;div class="container fill"&gt;
+    &lt;div class=&quot;row&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content red&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+                <p><strong>Example (container):</strong></p>
+            </div>
+            <div class="container fill">
+                <div class="row">
+                    <div class="column">
+                        <div class="example-content"></div>
+                    </div>
+                    <div class="column">
+                        <div class="example-content red"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <p><strong>Example (container-fluid):</strong></p>
+            </div>
+            <div class="container-fluid fill">
+                <div class="row">
+                    <div class="column">
+                        <div class="example-content"></div>
+                    </div>
+                    <div class="column">
+                        <div class="example-content red"></div>
+                    </div>
                 </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <h2>Column Offsets</h2>
+                <h2>Row Reverse</h2>
+                <p>Reverse the order of columns in a row. Supports breakpoints.</p>
+                <pre>
+                    <code class="language-html">
+&lt;div class="container"&gt;
+    &lt;div class=&quot;row&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content red&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row sm-reverse&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content red&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+                <p><strong>Example:</strong> On smallest screens red is second, but the order is reversed on the second row at the first breakpoint.</p>
                 <div class="row">
-                    <div class="column xs-100 sm-50 md-offset-25">
-                        <div class="example-content">.column.sm-50.md-offset-25</div>
+                    <div class="column">
+                        <div class="example-content"></div>
+                    </div>
+                    <div class="column">
+                        <div class="example-content red"></div>
+                    </div>
+                </div>
+                <div class="row sm-reverse">
+                    <div class="column">
+                        <div class="example-content"></div>
+                    </div>
+                    <div class="column">
+                        <div class="example-content red"></div>
                     </div>
                 </div>
             </div>
         </section>
-            <div class="container fill">
-                <h2>Container Fill</h2>
-                <div class="row">
-                    <div class="column auto">
-                        <div class="example-content">.column</div>
-                    </div>
-                    <div class="column auto">
-                        <div class="example-content">.column</div>
-                    </div>
-                    <div class="column auto">
-                        <div class="example-content">.column</div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid fill">
-                <h2>Container Fluid w/ No Gutters</h2>
-                <div class="row">
-                    <div class="column auto">
-                        <div class="example-content">.column</div>
-                    </div>
-                    <div class="column auto">
-                        <div class="example-content">.column</div>
-                    </div>
-                    <div class="column auto">
-                        <div class="example-content">.column</div>
-                    </div>
-                </div>
-            </div>
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
