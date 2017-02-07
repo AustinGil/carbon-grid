@@ -25,6 +25,12 @@
   flex-wrap: wrap;
   margin-left: -$spacing;
   margin-right: -$spacing;
+  &.justify-center {
+    justify-content: center;
+  }
+  &.justify-right {
+    justify-content: flex-end;
+  }
 }
 .column {
   flex: 0 0 100%;
