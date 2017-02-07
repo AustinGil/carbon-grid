@@ -22,26 +22,48 @@
             }
             .btn {
                 display: inline-block;
+                margin-top: 30px;
                 border: 1px solid;
                 padding: 10px 20px;
                 border-radius: 5px;
                 text-decoration: none;
-                color: #404040;
+                color: #2b9696;
                 transition: all 0.3s ease;
             }
             .btn:hover {
                 color: #fff;
-                background: #404040;
+                background: #2b9696;
             }
             .page-header, section {
                 padding-top: 50px;
                 padding-bottom: 50px;
+            }
+            .page-header {
+                max-width: 768px;
+            }
+            .hero-img {
+                width: 580px;
+                margin-bottom: 30px;
             }
             .page-title {
                 font-size: 50px;
             }
             h2 {
                 margin-top: 30px
+            }
+            table {
+                width: 100%;
+                margin-bottom: 30px;
+                border-collapse: collapse;
+            }
+            th {
+                text-align: left;
+            }
+            tr {
+                border-bottom: 1px solid;
+            }
+            th, td {
+                padding: 10px;
             }
             pre[class*="language-"] {
                 margin-bottom: 30px;
@@ -54,10 +76,10 @@
                 margin-bottom: 30px;
                 padding: 15px;
                 color: #fff;
-                background: #404040;
+                background: #2b9696;
             }
-            .example-content.red {
-                background: #4D0202;
+            .example-content.alt-color {
+                background: #404040;
             }
             .text-center {
                 text-align: center;
@@ -69,11 +91,12 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header class="page-header container text-center">
-            <img src="dist/images/hexagon-molecule.png">
+            <img class="hero-img" src="dist/images/hero-1.png">
             <h1 class="page-title">Carbon Grid</h1>
-            <h4>A simple, lightweight, and responsive CSS grid built on <a href="http://caniuse.com/#search=flexbox" target="_blank"><code class="inline-anchor">flexbox</code></a></h4>
+            <h4>An easy, lightweight, responsive CSS grid system built on <a href="http://caniuse.com/#search=flexbox" target="_blank"><code class="inline-anchor">flexbox</code></a>.</h4>
+            <p>Carbon Grid was inspired by some of the most popular grid systems, but built to be lightweight and simple to use. In other words, for <strong>less than 5kb (unzipped)</strong> you get a CSS grid system that can hanlde almost any layout and takes about 5 minutes to learn.</p>
             <div class="row">
-                <div class="column auto"><a href="https://github.com/Stegosource/carbon-grid" class="btn">View on GitHub</a></div>
+                <div class="column auto"><p><a href="https://github.com/Stegosource/carbon-grid" class="btn">View on GitHub</a></p></div>
             </div>
         </header>
         <section>
@@ -172,6 +195,7 @@
             <div class="container">
                 <h2>Adjustable Column Widths</h2>
                 <p>Set explicit widths for more control over column width at various breakpoints.</p>
+                <p>Naming conventions are as follows: {breakpoint}-{width}</p>
                 <div class="row">
                     <div class="column">
                         <table>
@@ -208,11 +232,21 @@
                         </table>
                     </div>
                     <div class="column">
-                        <p>Available Widths: 20%, 25%, 33%, 40%, 50%, 60%, 67%, 75%, 80%, 100%</p>
+                        <p><strong>Supported Widths:</strong></p>
+                        <ul>
+                            <li>20%</li>
+                            <li>25%</li>
+                            <li>33%</li>
+                            <li>40%</li>
+                            <li>50%</li>
+                            <li>60%</li>
+                            <li>67%</li>
+                            <li>75%</li>
+                            <li>80%</li>
+                            <li>100%</li>
+                        </ul>
                     </div>
                 </div>
-                <p>Class names are structured like this:</p>
-                <p>&lt;div class="column {breakpoint}-{width}"&gt; or &lt;div class="column md-33"&gt;</p>
                 <pre>
                     <code class="language-html">
 &lt;div class="container"&gt;
@@ -317,7 +351,7 @@
             &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content red&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content alt-color&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -331,7 +365,7 @@
                         <div class="example-content"></div>
                     </div>
                     <div class="column">
-                        <div class="example-content red"></div>
+                        <div class="example-content alt-color"></div>
                     </div>
                 </div>
             </div>
@@ -344,7 +378,7 @@
                         <div class="example-content"></div>
                     </div>
                     <div class="column">
-                        <div class="example-content red"></div>
+                        <div class="example-content alt-color"></div>
                     </div>
                 </div>
             </div>
@@ -361,7 +395,7 @@
             &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content red&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content alt-color&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;row&quot;&gt;&lt;/div&gt;
@@ -369,19 +403,19 @@
             &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content red&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content alt-color&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
                     </code>
                 </pre>
-                <p><strong>Example:</strong> On smallest screens red is second, but the order is reversed on the first row after the first breakpoint.</p>
+                <p><strong>Example:</strong> On smallest screens alt-color is second, but the order is reversed on the first row after the first breakpoint.</p>
                 <div class="row sm-reverse">
                     <div class="column">
                         <div class="example-content"></div>
                     </div>
                     <div class="column">
-                        <div class="example-content red"></div>
+                        <div class="example-content alt-color"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -389,11 +423,48 @@
                         <div class="example-content"></div>
                     </div>
                     <div class="column">
-                        <div class="example-content red"></div>
+                        <div class="example-content alt-color"></div>
                     </div>
                 </div>
             </div>
         </section>
+        <section>
+            <div class="container">
+                <h2>Justify Content</h2>
+                <p>To align the content within a row to be centered or to the right.</p>
+                <pre>
+                    <code class="language-html">
+&lt;div class="container"&gt;
+    &lt;div class=&quot;row justify-center&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column sm-50&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row justify-right&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column sm-50&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+                <p><strong>Example:</strong></p>
+                <div class="row justify-center">
+                    <div class="column sm-50">
+                        <div class="example-content"></div>
+                    </div>
+                </div>
+                <div class="row justify-right">
+                    <div class="column sm-50">
+                        <div class="example-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            
+        </footer>
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
