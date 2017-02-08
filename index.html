@@ -49,7 +49,7 @@
                 color: #fff;
                 background: #2b9696;
             }
-            .page-header, section {
+            .page-header, section, footer {
                 padding-top: 50px;
                 padding-bottom: 50px;
             }
@@ -100,6 +100,9 @@
             .text-center {
                 text-align: center;
             }
+            footer {
+
+            }
         </style>
     </head>
     <body>
@@ -109,7 +112,7 @@
         <header class="page-header container text-center">
             <img class="hero-img" src="dist/images/hero-img.png">
             <h1 class="page-title">Carbon Grid</h1>
-            <h4>An easy, lightweight, responsive CSS grid system built on <a href="http://caniuse.com/#search=flexbox" target="_blank"><code class="inline-anchor">flexbox</code></a>.</h4>
+            <h4>An easy, lightweight, responsive CSS grid system built on <a href="http://caniuse.com/#search=flexbox" target="_blank">flexbox</a>.</h4>
             <p>Carbon Grid was inspired by some of the most popular grid systems, but built to be lightweight and simple to use. In other words, for <strong>less than 5kb (unzipped)</strong> you get a CSS grid system that can hanlde almost any layout and takes about 5 minutes to learn.</p>
             <div class="row">
                 <div class="column auto"><p><a href="https://github.com/Stegosource/carbon-grid" class="btn">View on GitHub</a></p></div>
@@ -117,7 +120,28 @@
         </header>
         <section>
             <div class="container">
-                <h2>Container</h2>
+                <h2>Getting Started</h2>
+                <p>To use Carbon Grid, download the project from <a href="https://github.com/Stegosource/carbon-grid" target="_blank">GitHub</a> and locate the CSS file in the /dist/css/ folder. Add the code to your project and add a link to your CSS file in the head of your HTML document.
+                <p><stong>Example:</stong></p>
+                <pre>
+                    <code class="language-html">
+&lt;!doctype html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;!-- Other head stuff --&gt;
+        &lt;link rel="stylesheet" href="path/to/css/carbon-grid.css"&gt;
+        &lt;!-- More head stuff --&gt;
+    &lt;/head&gt;
+    &lt;!-- The rest of the page --&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+                <p><strong>Note:</strong> Carbon Grid is built on flexbox which is a relatively new addition to CSS, so make sure you <a href="http://caniuse.com/#search=flexbox" target="_blank">check the browser support</a> before using. Also, flexbox is awesome and can to a lot, but this system is designed to address the most common layout issues. If you need very specific flex features it's very easy to expand on the base styles.</p>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>Containers</h2>
                 <p>Wraps content to a consistent width.</p>
                 <pre>
                     <code class="language-html">
@@ -132,7 +156,7 @@
                 <div class="example-content"></div>
             </div>
             <div class="container">
-                <h2>Container Fluid</h2>
+                <h2>Full Width Containers</h2>
                 <p>Wraps content to for full width of sections.</p>
                 <pre>
                     <code class="language-html">
@@ -150,7 +174,7 @@
         <section>
             <div class="container">
                 <h2>Responsive Flexible Grid</h2>
-                <p>Use rows and columns to create responsive flexbox grids</p>
+                <p>Rows and columns create responsive flexbox grids. Because it is built on flexbox (which is awesome), column widths adjust automatically.</p>
                 <pre>
                     <code class="language-html">
 &lt;div class="container"&gt;
@@ -180,7 +204,6 @@
                         <div class="example-content"></div>
                     </div>
                 </div>
-                <p>Because it is built on flexbox, the row will adjust to fit the number of columns automatically.</p>
                 <p><strong>Example (2 columns):</strong></p>
                 <div class="row">
                     <div class="column">
@@ -447,7 +470,7 @@
         <section>
             <div class="container">
                 <h2>Justify Content</h2>
-                <p>To align the content within a row to be centered or to the right.</p>
+                <p>By default, the row justifies content to the left. But it's possible to center content or justify to the right.</p>
                 <pre>
                     <code class="language-html">
 &lt;div class="container"&gt;
@@ -479,7 +502,9 @@
         </section>
 
         <footer>
-            
+            <div class="contaier text-center">
+                <h4>&lt;/&gt; with ❤️️ by <a href="https://stegosource.com/">Stegosource</a></h4>
+            </div>
         </footer>
 
 
