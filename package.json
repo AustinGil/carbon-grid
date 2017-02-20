@@ -1,6 +1,6 @@
 {
   "name": "carbon-grid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple, lightweight, responsive CSS grid system built on flexbox.",
   "homepage": "https://stegosource.github.io/carbon-grid/",
   "style": "dist/css/carbon-grid.css",
