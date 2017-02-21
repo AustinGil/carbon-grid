@@ -44,7 +44,7 @@ gulp.task('sass', function() {
 // Watchers
 gulp.task('watch', function() {
   gulp.watch('src/scss/**/*.scss', ['sass']);
-  gulp.watch('src/*.html', browserSync.reload);
+  gulp.watch('index.html', browserSync.reload);
   gulp.watch('src/js/**/*.js', browserSync.reload);
 })
 

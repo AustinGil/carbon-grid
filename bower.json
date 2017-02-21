@@ -1,0 +1,31 @@
+{
+  "name": "carbon-grid",
+  "version": "1.0.3",
+  "homepage": "https://stegosource.github.io/carbon-grid/",
+  "authors": [
+    "Stegosource <austin@stegosource.com>"
+  ],
+  "description": "A simple, lightweight, responsive CSS grid system built on flexbox.",
+  "main": "dist/css/carbon-grid.css",
+  "keywords": [
+    "browser",
+    "flexbox",
+    "grid",
+    "css",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "docs"
+  ]
+}

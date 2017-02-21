@@ -1,14 +1,12 @@
 {
   "name": "carbon-grid",
-  "version": "1.0.1",
-  "description": "A simple, lightweight, responsive CSS grid system built on flexbox.",
+  "version": "1.0.3",
   "homepage": "https://stegosource.github.io/carbon-grid/",
-  "style": "dist/css/carbon-grid.css",
+  "authors": [
+    "Stegosource <austin@stegosource.com>"
+  ],
+  "description": "A simple, lightweight, responsive CSS grid system built on flexbox.",
   "main": "dist/css/carbon-grid.css",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Stegosource/carbon-grid.git"
-  },
   "keywords": [
     "browser",
     "flexbox",
@@ -21,8 +19,11 @@
     "framework",
     "web"
   ],
-  "author": "Stegosource",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Stegosource/carbon-grid.git"
+  },
   "devDependencies": {
     "browser-sync": "^2.7.12",
     "del": "^2.0.2",
@@ -40,6 +41,7 @@
     "run-sequence": "^1.1.2"
   },
   "files": [
+    "src",
     "dist"
   ]
 }
