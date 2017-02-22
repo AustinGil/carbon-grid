@@ -84,6 +84,9 @@
             th, td {
                 padding: 10px;
             }
+            pre {
+
+            }
             pre[class*="language-"] {
                 margin-bottom: 30px;
                 padding: 0 1em;
@@ -124,8 +127,9 @@
         <section>
             <div class="container">
                 <h2>Getting Started</h2>
-                <p>To use Carbon Grid, download the project from <a href="https://github.com/Stegosource/carbon-grid" target="_blank">GitHub</a> and locate the CSS file in the /dist/css/ folder. Add the code to your project and add a link to your CSS file in the head of your HTML document.
-                <p><stong>Example:</stong></p>
+                <p><strong>Intro:</strong> Carbon Grid uses flexbox which is awesome and can do a lot, but this system is designed to only address the most common layout issues. If you need very specific flex features it's very easy to expand on the base styles. Flexbox is a relatively new addition to CSS, so make sure you <a href="http://caniuse.com/#search=flexbox" target="_blank">check the browser support</a> before using. It's been tested back to IE 9 and seems to work well.</p>
+                <p><strong>Usage:</strong> To use Carbon Grid, download the project from <a href="https://github.com/Stegosource/carbon-grid" target="_blank">GitHub</a>, then locate the main CSS file in the /dist/css/ folder. Add the code to your project and add a link to your CSS file in the head of your HTML document.</p>
+                <p><strong>Example:</strong></p>
                 <pre>
                     <code class="language-html">
 &lt;!doctype html&gt;
@@ -139,7 +143,9 @@
 &lt;/html&gt;
                     </code>
                 </pre>
-                <p><strong>Note:</strong> Carbon Grid is built on flexbox which is a relatively new addition to CSS, so make sure you <a href="http://caniuse.com/#search=flexbox" target="_blank">check the browser support</a> before using. Also, flexbox is awesome and can to a lot, but this system is designed to address the most common layout issues. If you need very specific flex features it's very easy to expand on the base styles.</p>
+                <p>Alternatively, you can inlcude the project via Bower or NPM.</p>
+                <p><strong>Bower:</strong> <pre><code class="language-markup">bower install carbon-grid --save</code></pre></p>
+                <p><strong>NPM:</strong> <pre><code class="language-markup">npm install carbon-grid --save</code></pre></p>
             </div>
         </section>
         <section>
