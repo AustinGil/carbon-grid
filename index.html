@@ -128,36 +128,24 @@
             <div class="container">
                 <h2>Getting Started</h2>
                 <p><strong>Intro:</strong> Carbon Grid uses flexbox which is awesome and can do a lot, but this system is designed to only address the most common layout issues. If you need very specific flex features it's very easy to expand on the base styles. Flexbox is a relatively new addition to CSS, so make sure you <a href="http://caniuse.com/#search=flexbox" target="_blank">check the browser support</a> before using. It's been tested back to IE 9 and seems to work well.</p>
-                <p><strong>Usage:</strong> To use Carbon Grid, download the project from <a href="https://github.com/Stegosource/carbon-grid" target="_blank">GitHub</a>, then locate the main CSS file in the /dist/css/ folder. Add the code to your project and add a link to your CSS file in the head of your HTML document.</p>
-                <p><strong>Example:</strong></p>
-                <pre>
-                    <code class="language-html">
-&lt;!doctype html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;!-- Other head stuff --&gt;
-        &lt;link rel="stylesheet" href="path/to/css/carbon-grid.css"&gt;
-        &lt;!-- More head stuff --&gt;
-    &lt;/head&gt;
-    &lt;!-- The rest of the page --&gt;
-&lt;/html&gt;
-                    </code>
-                </pre>
-                <p>Alternatively, you can inlcude the project via Bower or NPM.</p>
-                <p><strong>Bower:</strong> <pre><code class="language-markup">bower install carbon-grid --save</code></pre></p>
-                <p><strong>NPM:</strong> <pre><code class="language-markup">npm install carbon-grid --save</code></pre></p>
+                <p><strong>Download:</strong></p>
+                <p><a href="https://raw.githubusercontent.com/Stegosource/carbon-grid/master/dist/css/carbon-grid.css" target="_blank">https://raw.githubusercontent.com/Stegosource/carbon-grid/master/dist/css/carbon-grid.css</a></p>
+                <p><strong>NPM:</strong></p>
+<pre><code class="language-markup">npm install carbon-grid --save</code></pre>
+                <p><strong>Bower:</strong></p>
+                <pre><code class="language-markup">bower install carbon-grid --save</code></pre>
+                <p><strong>CDN:</strong></p>
+                <pre><code class="language-html">&lt;link rel="stylesheet" href="https://unpkg.com/carbon-grid/dist/css/carbon-grid.css"&gt;</code></pre>
             </div>
         </section>
         <section>
             <div class="container">
                 <h2>Containers</h2>
                 <p>Wraps content to a consistent width. It's not necessary to use the container, but your wrapper should have padding left and right of 15px.</p>
-                <pre>
-                    <code class="language-html">
+                <pre><code class="language-html">
 &lt;div class="container"&gt;
     &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-                    </code>
+&lt;/div&gt;</code>
                 </pre>
             </div>
             <div class="container">
@@ -171,8 +159,7 @@
                     <code class="language-html">
 &lt;div class="container-fluid"&gt;
     &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-                    </code>
+&lt;/div&gt;</code>
                 </pre>
                 <p><strong>Example:</strong></p>
             </div>
@@ -198,8 +185,7 @@
             &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-                    </code>
+&lt;/div&gt;</code>
                 </pre>
                 <p><strong>Example:</strong></p>
                 <div class="row">
@@ -312,8 +298,7 @@
             &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-                    </code>
+&lt;/div&gt;</code>
                 </pre>
                 <p><strong>Example:</strong> Grid with 4 columns on large screens, 2 columns on middle screens, and 1 on smallest</p>
                 <div class="row">
@@ -402,8 +387,7 @@
             &lt;div class=&quot;example-content alt-color&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-                    </code>
+&lt;/div&gt;</code>
                 </pre>
                 <p><strong>Example (container):</strong></p>
             </div>
@@ -454,8 +438,7 @@
             &lt;div class=&quot;example-content alt-color&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-                    </code>
+&lt;/div&gt;</code>
                 </pre>
                 <p><strong>Example:</strong> On smallest screens alt-color is second, but the order is reversed on the first row after the first breakpoint.</p>
                 <div class="row sm-reverse">
@@ -493,8 +476,7 @@
             &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-                    </code>
+&lt;/div&gt;</code>
                 </pre>
                 <p><strong>Example:</strong></p>
                 <div class="row justify-center">
