@@ -32,6 +32,9 @@
                 margin-top: 0;
                 margin-bottom: 15px;
             }
+            a {
+                color: #2b9696;
+            }
             img {
                 max-width: 100%;
             }
@@ -142,7 +145,7 @@
         <section>
             <div class="container">
                 <h2>Containers</h2>
-                <p>Wraps content to a consistent width.</p>
+                <p>Wraps content to a consistent width. It's not necessary to use the container, but your wrapper should have padding left and right of 15px.</p>
                 <pre>
                     <code class="language-html">
 &lt;div class="container"&gt;
@@ -232,7 +235,7 @@
         </section>
         <section>
             <div class="container">
-                <h2>Adjustable Column Widths</h2>
+                <h2>Explicit Responsive Column Widths</h2>
                 <p>Set explicit widths for more control over column width at various breakpoints.</p>
                 <p>Naming conventions are as follows: {breakpoint}-{width}</p>
                 <div class="row">
@@ -308,10 +311,10 @@
                 </pre>
                 <p><strong>Example:</strong> Grid with 4 columns on large screens, 2 columns on middle screens, and 1 on smallest</p>
                 <div class="row">
-                    <div class="column sm-50 lg-25">
+                    <div class="column sm-50 md-33 lg-25">
                         <div class="example-content"></div>
                     </div>
-                    <div class="column sm-50 lg-25">
+                    <div class="column sm-50 md-67 lg-25">
                         <div class="example-content"></div>
                     </div>
                     <div class="column sm-50 lg-25">

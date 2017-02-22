@@ -102,8 +102,6 @@
     }
   }
   .column {
-    flex: 1;
-    // Widths
     &.sm-auto {
       flex: 1;
     }
@@ -175,6 +173,7 @@
     }   
   }
   .column {
+    flex: 1;
     // Widths
     &.md-auto {
       flex: 1;
