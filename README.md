@@ -1,5 +1,5 @@
 # CARBON GRID
-A simple, lightweight, responsive CSS grid system built on flexbox.
+**A simple, lightweight, responsive CSS grid system built on flexbox.**
 
 Carbon Grid was inspired by some of the most popular grid systems, but built to be lightweight and simple to use. In other words, for less than 5kb (unzipped) you get a CSS grid system that can hanlde almost any layout and takes about 5 minutes to learn.
 
