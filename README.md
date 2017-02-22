@@ -3,11 +3,27 @@ A simple, lightweight, responsive CSS grid system built on flexbox.
 
 Carbon Grid was inspired by some of the most popular grid systems, but built to be lightweight and simple to use. In other words, for less than 5kb (unzipped) you get a CSS grid system that can hanlde almost any layout and takes about 5 minutes to learn.
 
-Note: Carbon Grid is built on flexbox which is a relatively new addition to CSS, so make sure you [check the browser support](http://caniuse.com/#search=flexbox){:target="_blank"} before using. Also, flexbox is awesome and can to a lot, but this system is designed to address the most common layout issues. If you need very specific flex features it's very easy to expand on the base styles.
-
 ### Getting Started
 
-To use Carbon Grid, download the project from GitHub and locate the CSS file in the /dist/css/ folder. Add the code to your project and add a link to your CSS file in the head of your HTML document.
+Intro: Carbon Grid uses flexbox which is awesome and can do a lot, but this system is designed to only address the most common layout issues. If you need very specific flex features it's very easy to expand on the base styles. Flexbox is a relatively new addition to CSS, so make sure you check the browser support before using. It's been tested back to IE 9 and seems to work well.
+
+**Download:**
+[https://raw.githubusercontent.com/Stegosource/carbon-grid/master/dist/css/carbon-grid.css](https://stegosource.github.io/carbon-grid/)
+
+**NPM:**
+```
+npm install carbon-grid --save
+```
+
+**Bower:**
+```
+bower install carbon-grid --save
+```
+
+**CDN:**
+```
+<link rel="stylesheet" href="https://unpkg.com/carbon-grid/dist/css/carbon-grid.css">
+```
 
 ### Documentation
 
