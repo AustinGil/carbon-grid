@@ -77,6 +77,9 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  &.xs-auto {
+    flex: auto;
+  }
   // Offsets
   // &.xs-offset-25 {
   //   margin-left: 25%;
@@ -144,6 +147,9 @@
     &.sm-100 {
       flex: 0 0 100%;
       max-width: 100%;
+    }
+    &.sm-auto {
+      flex: auto;
     }
     // Offsets
     // &.sm-offset-25 {
@@ -218,6 +224,9 @@
       flex: 0 0 100%;
       max-width: 100%;
     }
+    &.md-auto {
+      flex: auto;
+    }
     // Offsets
     // &.md-offset-25 {
     //   margin-left: 25%;
@@ -290,6 +299,9 @@
       flex: 0 0 100%;
       max-width: 100%;
     }
+    &.lg-auto {
+      flex: auto;
+    }
     // Offsets
     // &.lg-offset-25 {
     //   margin-left: 25%;
@@ -361,6 +373,9 @@
     &.xl-100 {
       flex: 0 0 100%;
       max-width: 100%;
+    }
+    &.xl-auto {
+      flex: auto;
     }
     // Offsets
     // &.xl-offset-25 {
