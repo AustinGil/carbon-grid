@@ -1,321 +1,360 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="docs/images/apple-touch-icon.png">
-        <link rel="icon" type="image/png" href="docs/images/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="docs/images/favicon-16x16.png" sizes="16x16">
-        <link rel="manifest" href="docs/images/manifest.json">
-        <link rel="mask-icon" href="docs/images/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="theme-color" content="#ffffff">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/normalize/5.0.0/normalize.css">
-        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/prism/1.6.0/themes/prism.css">-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/prism/1.6.0/themes/prism-okaidia.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="docs/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="docs/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="docs/images/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="docs/images/manifest.json">
+    <link rel="mask-icon" href="docs/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 
-        <link rel="stylesheet" href="dist/css/carbon-grid.css">
-        
-        <style>
-            body {
-                line-height: 1.5;
-                font-family: 'Raleway', sans-serif;
-            }
-            p, h1, h2, h3, h4, h5, h6 {
-                margin-top: 0;
-                margin-bottom: 15px;
-            }
-            a {
-                color: #2b9696;
-            }
-            img {
-                max-width: 100%;
-            }
-            .btn {
-                display: inline-block;
-                margin-top: 30px;
-                border: 1px solid;
-                padding: 10px 20px;
-                border-radius: 5px;
-                text-decoration: none;
-                color: #2b9696;
-                transition: all 0.3s ease;
-            }
-            .btn:hover {
-                color: #fff;
-                background: #2b9696;
-            }
-            .page-header, section, footer {
-                padding-top: 50px;
-                padding-bottom: 50px;
-            }
-            .page-header {
-                max-width: 768px;
-            }
-            .hero-img {
-                width: 480px;
-            }
-            .page-title {
-                font-size: 50px;
-                font-weight: 100;
-                text-transform: uppercase;
-            }
-            h2 {
-                margin-top: 30px
-            }
-            table {
-                width: 100%;
-                margin-bottom: 30px;
-                border-collapse: collapse;
-            }
-            th {
-                text-align: left;
-            }
-            tr {
-                border-bottom: 1px solid;
-            }
-            th, td {
-                padding: 10px;
-            }
-            pre {
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/normalize/5.0.0/normalize.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/prism/1.6.0/themes/prism.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/prism/1.6.0/themes/prism-okaidia.css">
 
-            }
-            pre[class*="language-"] {
-                margin-bottom: 30px;
-                padding: 0 1em;
-            }
-            section:nth-child(even) {
-                background: #f7f7f7;
-            }
-            .example-content {
-                margin-bottom: 30px;
-                padding: 15px;
-                color: #fff;
-                background: #2b9696;
-            }
-            .example-content.alt-color {
-                background: #404040;
-            }
-            .text-center {
-                text-align: center;
-            }
-            footer {
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
 
-            }
-        </style>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
+    <link rel="stylesheet" href="dist/css/carbon-grid.css">
+
+    <style>
+        body {
+            line-height: 1.5;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #2b9696;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            border: 1px solid;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #2b9696;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            color: #fff;
+            background: #2b9696;
+        }
+
+        .page-header,
+        section,
+        footer {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .page-header {
+            max-width: 768px;
+        }
+
+        .hero-img {
+            width: 480px;
+        }
+
+        .page-title {
+            font-size: 50px;
+            font-weight: 100;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            margin-top: 30px
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 30px;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        tr {
+            border-bottom: 1px solid;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        pre {}
+
+        pre[class*="language-"] {
+            margin-bottom: 30px;
+            padding: 0 1em;
+        }
+
+        section:nth-child(even) {
+            background: #f7f7f7;
+        }
+
+        .example-content {
+            margin-bottom: 30px;
+            padding: 15px;
+            color: #fff;
+            background: #2b9696;
+        }
+
+        .example-content.alt-color {
+            background: #404040;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        footer {}
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header class="page-header container text-center">
-            <img class="hero-img" src="docs/images/hero-img.png">
-            <h1 class="page-title">Carbon Grid</h1>
-            <h4>A simple, lightweight, responsive CSS grid system built on <a href="http://caniuse.com/#search=flexbox" target="_blank">flexbox</a>.</h4>
-            <p>Carbon Grid was inspired by some of the most popular grid systems, but built to be lightweight and simple to use. In other words, for <strong>less than 5kb (unzipped)</strong> you get a CSS grid system that can hanlde almost any layout and takes about 5 minutes to learn.</p>
-            <div class="row">
-                <div class="column auto"><p><a href="https://github.com/Stegosource/carbon-grid" class="btn">View on GitHub</a></p></div>
+    <header class="page-header container text-center">
+        <img class="hero-img" src="docs/images/hero-img.png">
+        <h1 class="page-title">Carbon Grid</h1>
+        <h4>A simple, lightweight, responsive CSS grid system built on <a href="http://caniuse.com/#search=flexbox" target="_blank">flexbox</a>.</h4>
+        <p>Carbon Grid was inspired by some of the most popular grid systems, but built to be lightweight and simple to use.
+            In other words, for <strong>less than 5kb (unzipped)</strong> you get a CSS grid system that can handle almost
+            any layout and takes about 5 minutes to learn.</p>
+        <div class="row">
+            <div class="column auto">
+                <p><a href="https://github.com/Stegosource/carbon-grid" class="btn">View on GitHub</a></p>
             </div>
-        </header>
-        <section>
-            <div class="container">
-                <h2>Getting Started</h2>
-                <p><strong>Intro:</strong> Carbon Grid uses flexbox which is awesome and can do a lot, but this system is designed to only address the most common layout issues. If you need very specific flex features it's very easy to expand on the base styles. Flexbox is a relatively new addition to CSS, so make sure you <a href="http://caniuse.com/#search=flexbox" target="_blank">check the browser support</a> before using. It's been tested back to IE 9 and seems to work well.</p>
-                <p><strong>Download:</strong></p>
-                <p><a href="https://raw.githubusercontent.com/Stegosource/carbon-grid/master/dist/css/carbon-grid.css" target="_blank">https://raw.githubusercontent.com/Stegosource/carbon-grid/master/dist/css/carbon-grid.css</a></p>
-                <p><strong>NPM:</strong></p>
-<pre><code class="language-markup">npm install carbon-grid --save</code></pre>
-                <p><strong>Bower:</strong></p>
-                <pre><code class="language-markup">bower install carbon-grid --save</code></pre>
-                <p><strong>CDN:</strong></p>
-                <pre><code class="language-html">&lt;link rel="stylesheet" href="https://unpkg.com/carbon-grid/dist/css/carbon-grid.css"&gt;</code></pre>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h2>Containers</h2>
-                <p>Wraps content to a consistent width. It's not necessary to use the container, but your wrapper should have padding left and right of 15px.</p>
-                <pre><code class="language-html">
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <h2>Getting Started</h2>
+            <p><strong>Intro:</strong> Carbon Grid uses flexbox which is awesome and can do a lot, but this system is designed
+                to only address the most common layout issues. If you need very specific flex features it's very easy to
+                expand on the base styles. Flexbox is a relatively new addition to CSS, so make sure you <a href="http://caniuse.com/#search=flexbox"
+                    target="_blank">check the browser support</a> before using. It's been tested back to IE 9 and seems to work
+                well.
+            </p>
+            <p><strong>Download:</strong></p>
+            <p><a href="https://raw.githubusercontent.com/Stegosource/carbon-grid/master/dist/css/carbon-grid.css" target="_blank">https://raw.githubusercontent.com/Stegosource/carbon-grid/master/dist/css/carbon-grid.css</a></p>
+            <p><strong>NPM:</strong></p>
+            <pre><code class="language-markup">npm install carbon-grid --save</code></pre>
+            <p><strong>Bower:</strong></p>
+            <pre><code class="language-markup">bower install carbon-grid --save</code></pre>
+            <p><strong>CDN:</strong></p>
+            <pre><code class="language-html">&lt;link rel="stylesheet" href="https://unpkg.com/carbon-grid/dist/css/carbon-grid.css"&gt;</code></pre>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Containers</h2>
+            <p>Wraps content to a consistent width. It's not necessary to use the container, but your wrapper should have padding
+                left and right of 15px.</p>
+            <pre><code class="language-html">
 &lt;div class="container"&gt;
-    &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+    &lt;span class=&quot;example-content&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code>
                 </pre>
-            </div>
-            <div class="container">
-                <p><strong>Example:</strong></p>
-                <div class="example-content"></div>
-            </div>
-            <div class="container">
-                <h2>Full Width Containers</h2>
-                <p>Wraps content to for full width of sections.</p>
-                <pre>
+        </div>
+        <div class="container">
+            <p><strong>Example:</strong></p>
+            <div class="example-content"></div>
+        </div>
+        <div class="container">
+            <h2>Full Width Containers</h2>
+            <p>Wraps content to for full width of sections.</p>
+            <pre>
                     <code class="language-html">
 &lt;div class="container-fluid"&gt;
-    &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+    &lt;span class=&quot;example-content&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code>
                 </pre>
-                <p><strong>Example:</strong></p>
-            </div>
-            <div class="container-fluid">
-                <div class="example-content"></div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h2>Responsive Flexible Grid</h2>
-                <p>Rows and columns create responsive flexbox grids. Because it is built on flexbox (which is awesome), column widths adjust automatically.</p>
-                <pre>
+            <p><strong>Example:</strong></p>
+        </div>
+        <div class="container-fluid">
+            <div class="example-content"></div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Responsive Flexible Grid</h2>
+            <p>Rows and columns create responsive flexbox grids. Because it is built on flexbox (which is awesome), column widths
+                adjust automatically.</p>
+            <pre>
                     <code class="language-html">
 &lt;div class="container"&gt;
-    &lt;div class=&quot;row&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;column&quot;&gt;
+            &lt;span class=&quot;example-content&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;
+            &lt;span class=&quot;example-content&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;
+            &lt;span class=&quot;example-content&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code>
                 </pre>
-                <p><strong>Example:</strong></p>
-                <div class="row">
-                    <div class="column">
-                        <div class="example-content"></div>
-                    </div>
-                    <div class="column">
-                        <div class="example-content"></div>
-                    </div>
-                    <div class="column">
-                        <div class="example-content"></div>
-                    </div>
+            <p><strong>Example:</strong></p>
+            <div class="row">
+                <div class="column">
+                    <div class="example-content"></div>
                 </div>
-                <p><strong>Example (2 columns):</strong></p>
-                <div class="row">
-                    <div class="column">
-                        <div class="example-content"></div>
-                    </div>
-                    <div class="column">
-                        <div class="example-content"></div>
-                    </div>
+                <div class="column">
+                    <div class="example-content"></div>
                 </div>
-                <p><strong>Example (4 columns):</strong></p>
-                <div class="row">
-                    <div class="column">
-                        <div class="example-content"></div>
-                    </div>
-                    <div class="column">
-                        <div class="example-content"></div>
-                    </div>
-                    <div class="column">
-                        <div class="example-content"></div>
-                    </div>
-                    <div class="column">
-                        <div class="example-content"></div>
-                    </div>
+                <div class="column">
+                    <div class="example-content"></div>
                 </div>
             </div>
-        </section>
-        <section>
-            <div class="container">
-                <h2>Explicit Responsive Column Widths</h2>
-                <p>Set explicit widths for more control over column width at various breakpoints.</p>
-                <p>Naming conventions are as follows: {breakpoint}-{width}</p>
-                <div class="row">
-                    <div class="column">
-                        <table>
-                            <tr>
-                                <th>Name</th>
-                                <th>Width</th>
-                                <th>in pixels</th>
-                            </tr>
-                            <tr>
-                                <td>xs</td>
-                                <td>0 - 36rem</td>
-                                <td>0 - 576px</td>
-                            </tr>
-                            <tr>
-                                <td>sm</td>
-                                <td>> 36rem</td>
-                                <td>> 576px</td>
-                            </tr>
-                            <tr>
-                                <td>md</td>
-                                <td>> 48rem</td>
-                                <td>> 768px</td>
-                            </tr>
-                            <tr>
-                                <td>lg</td>
-                                <td>> 62rem</td>
-                                <td>> 992px</td>
-                            </tr>
-                            <tr>
-                                <td>xl</td>
-                                <td>> 75rem</td>
-                                <td>> 1200px</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="column">
-                        <p><strong>Supported Widths:</strong></p>
-                        <ul>
-                            <li>20%</li>
-                            <li>25%</li>
-                            <li>33%</li>
-                            <li>40%</li>
-                            <li>50%</li>
-                            <li>60%</li>
-                            <li>67%</li>
-                            <li>75%</li>
-                            <li>80%</li>
-                            <li>100%</li>
-                        </ul>
-                    </div>
+            <p><strong>Example (2 columns):</strong></p>
+            <div class="row">
+                <div class="column">
+                    <div class="example-content"></div>
                 </div>
-                <pre>
+                <div class="column">
+                    <div class="example-content"></div>
+                </div>
+            </div>
+            <p><strong>Example (4 columns):</strong></p>
+            <div class="row">
+                <div class="column">
+                    <div class="example-content"></div>
+                </div>
+                <div class="column">
+                    <div class="example-content"></div>
+                </div>
+                <div class="column">
+                    <div class="example-content"></div>
+                </div>
+                <div class="column">
+                    <div class="example-content"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Explicit Responsive Column Widths</h2>
+            <p>Set explicit widths for more control over column width at various breakpoints.</p>
+            <p>Naming conventions are as follows: {breakpoint}-{width}</p>
+            <div class="row">
+                <div class="column">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Width</th>
+                            <th>in pixels</th>
+                        </tr>
+                        <tr>
+                            <td>xs</td>
+                            <td>0 - 36rem</td>
+                            <td>0 - 576px</td>
+                        </tr>
+                        <tr>
+                            <td>sm</td>
+                            <td>> 36rem</td>
+                            <td>> 576px</td>
+                        </tr>
+                        <tr>
+                            <td>md</td>
+                            <td>> 48rem</td>
+                            <td>> 768px</td>
+                        </tr>
+                        <tr>
+                            <td>lg</td>
+                            <td>> 62rem</td>
+                            <td>> 992px</td>
+                        </tr>
+                        <tr>
+                            <td>xl</td>
+                            <td>> 75rem</td>
+                            <td>> 1200px</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="column">
+                    <p><strong>Supported Widths:</strong></p>
+                    <ul>
+                        <li>20%</li>
+                        <li>25%</li>
+                        <li>33%</li>
+                        <li>40%</li>
+                        <li>50%</li>
+                        <li>60%</li>
+                        <li>67%</li>
+                        <li>75%</li>
+                        <li>80%</li>
+                        <li>100%</li>
+                    </ul>
+                </div>
+            </div>
+            <pre>
                     <code class="language-html">
 &lt;div class="container"&gt;
-    &lt;div class=&quot;row&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;column sm-50 lg-25&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;column sm-50 lg-25&quot;&gt;
+            &lt;span class=&quot;example-content&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;column sm-50 lg-25&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column sm-50 lg-25&quot;&gt;
+            &lt;span class=&quot;example-content&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;column sm-50 lg-25&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column sm-50 lg-25&quot;&gt;
+            &lt;span class=&quot;example-content&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;column sm-50 lg-25&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column sm-50 lg-25&quot;&gt;
+            &lt;span class=&quot;example-content&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code>
                 </pre>
-                <p><strong>Example:</strong> Grid with 4 columns on large screens, 2 columns on middle screens, and 1 on smallest</p>
-                <div class="row">
-                    <div class="column sm-50 md-33 lg-25">
-                        <div class="example-content"></div>
-                    </div>
-                    <div class="column sm-50 md-67 lg-25">
-                        <div class="example-content"></div>
-                    </div>
-                    <div class="column sm-50 lg-25">
-                        <div class="example-content"></div>
-                    </div>
-                    <div class="column sm-50 lg-25">
-                        <div class="example-content"></div>
-                    </div>
+            <p><strong>Example:</strong> Grid with 4 columns on large screens, 2 columns on middle screens, and 1 on smallest</p>
+            <div class="row">
+                <div class="column sm-50 md-33 lg-25">
+                    <div class="example-content"></div>
                 </div>
-                <!--<p><strong>More complex examples:</strong></p><div class="row">
+                <div class="column sm-50 md-67 lg-25">
+                    <div class="example-content"></div>
+                </div>
+                <div class="column sm-50 lg-25">
+                    <div class="example-content"></div>
+                </div>
+                <div class="column sm-50 lg-25">
+                    <div class="example-content"></div>
+                </div>
+            </div>
+            <!--<p><strong>More complex examples:</strong></p><div class="row">
                     <div class="column sm-67">
                         <div class="example-content">.column.sm-67</div>
                     </div>
@@ -356,9 +395,9 @@
                         <div class="example-content">.column.xl-33</div>
                     </div>
                 </div>-->
-            </div>
-        </section>
-        <!--<section>
+        </div>
+    </section>
+    <!--<section>
             <div class="container">
                 <h2>Offsets</h2>
                 <p>Offset the columns from the left</p>
@@ -372,147 +411,153 @@
                 </div>                
             </div>
         </section>-->
-        <section>
-            <div class="container">
-                <h2>Container Fill</h2>
-                <p>Remove spacing around containers and columns.</p>
-                <pre>
+    <section>
+        <div class="container">
+            <h2>Container Fill</h2>
+            <p>Remove spacing around containers and columns.</p>
+            <pre>
                     <code class="language-html">
 &lt;div class="container fill"&gt;
-    &lt;div class=&quot;row&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;column&quot;&gt;
+            &lt;span class=&quot;example-content&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content alt-color&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;
+            &lt;span class=&quot;example-content alt-color&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code>
                 </pre>
-                <p><strong>Example (container):</strong></p>
-            </div>
-            <div class="container fill">
-                <div class="row">
-                    <div class="column">
-                        <div class="example-content"></div>
-                    </div>
-                    <div class="column">
-                        <div class="example-content alt-color"></div>
-                    </div>
+            <p><strong>Example (container):</strong></p>
+        </div>
+        <div class="container fill">
+            <div class="row">
+                <div class="column">
+                    <div class="example-content"></div>
+                </div>
+                <div class="column">
+                    <div class="example-content alt-color"></div>
                 </div>
             </div>
-            <div class="container">
-                <p><strong>Example (container-fluid):</strong></p>
-            </div>
-            <div class="container-fluid fill">
-                <div class="row">
-                    <div class="column">
-                        <div class="example-content"></div>
-                    </div>
-                    <div class="column">
-                        <div class="example-content alt-color"></div>
-                    </div>
+        </div>
+        <div class="container">
+            <p><strong>Example (container-fluid):</strong></p>
+        </div>
+        <div class="container-fluid fill">
+            <div class="row">
+                <div class="column">
+                    <div class="example-content"></div>
+                </div>
+                <div class="column">
+                    <div class="example-content alt-color"></div>
                 </div>
             </div>
-        </section>
-        <section>
-            <div class="container">
-                <h2>Row Reverse</h2>
-                <p>Reverse the order of columns in a row. Supports breakpoints.</p>
-                <pre>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Row Reverse</h2>
+            <p>Reverse the order of columns in a row. Supports breakpoints.</p>
+            <pre>
                     <code class="language-html">
 &lt;div class="container"&gt;
-    &lt;div class=&quot;row sm-reverse&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;row sm-reverse&quot;&gt;
+        &lt;div class=&quot;column&quot;&gt;
+            &lt;span class=&quot;example-content&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content alt-color&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;
+            &lt;span class=&quot;example-content alt-color&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;row&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;column&quot;&gt;
+            &lt;span class=&quot;example-content&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content alt-color&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;
+            &lt;span class=&quot;example-content alt-color&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code>
                 </pre>
-                <p><strong>Example:</strong> On smallest screens alt-color is second, but the order is reversed on the first row after the first breakpoint.</p>
-                <div class="row sm-reverse">
-                    <div class="column">
-                        <div class="example-content"></div>
-                    </div>
-                    <div class="column">
-                        <div class="example-content alt-color"></div>
-                    </div>
+            <p><strong>Example:</strong> On smallest screens alt-color is second, but the order is reversed on the first row
+                after the first breakpoint.</p>
+            <div class="row sm-reverse">
+                <div class="column">
+                    <div class="example-content"></div>
                 </div>
-                <div class="row">
-                    <div class="column">
-                        <div class="example-content"></div>
-                    </div>
-                    <div class="column">
-                        <div class="example-content alt-color"></div>
-                    </div>
+                <div class="column">
+                    <div class="example-content alt-color"></div>
                 </div>
             </div>
-        </section>
-        <section>
-            <div class="container">
-                <h2>Justify Content</h2>
-                <p>By default, the row justifies content to the left. But it's possible to center content or justify to the right.</p>
-                <pre>
+            <div class="row">
+                <div class="column">
+                    <div class="example-content"></div>
+                </div>
+                <div class="column">
+                    <div class="example-content alt-color"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Justify Content</h2>
+            <p>By default, the row justifies content to the left. But it's possible to center content or justify to the right.</p>
+            <pre>
                     <code class="language-html">
 &lt;div class="container"&gt;
-    &lt;div class=&quot;row justify-center&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;column sm-50&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;row justify-center&quot;&gt;
+        &lt;div class=&quot;column sm-50&quot;&gt;
+            &lt;span class=&quot;example-content&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;row justify-right&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;column sm-50&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;example-content&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;row justify-right&quot;&gt;
+        &lt;div class=&quot;column sm-50&quot;&gt;
+            &lt;span class=&quot;example-content&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code>
                 </pre>
-                <p><strong>Example:</strong></p>
-                <div class="row justify-center">
-                    <div class="column sm-50">
-                        <div class="example-content"></div>
-                    </div>
-                </div>
-                <div class="row justify-right">
-                    <div class="column sm-50">
-                        <div class="example-content"></div>
-                    </div>
+            <p><strong>Example:</strong></p>
+            <div class="row justify-center">
+                <div class="column sm-50">
+                    <div class="example-content"></div>
                 </div>
             </div>
-        </section>
-
-        <footer>
-            <div class="contaier text-center">
-                <h4>&lt;/&gt; with ❤️️ by <a href="https://stegosource.com/">Stegosource</a></h4>
+            <div class="row justify-right">
+                <div class="column sm-50">
+                    <div class="example-content"></div>
+                </div>
             </div>
-        </footer>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contaier text-center">
+            <h4>&lt;/&gt; with ❤️️ by <a href="https://stegosource.com/">Stegosource</a></h4>
+        </div>
+    </footer>
 
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/prism/1.6.0/prism.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        
-        <!-- Google Analytics -->
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/prism/1.6.0/prism.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+    </script>
 
-            ga('create', 'UA-32074770-12', 'auto');
-            ga('send', 'pageview');
-        </script>
-        <!-- Google Analytics -->
-    </body>
+    <!-- Google Analytics -->
+    <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-32074770-12', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- Google Analytics -->
+</body>
+
 </html>
