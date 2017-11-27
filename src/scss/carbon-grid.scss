@@ -97,7 +97,7 @@
 	// }
 }
 
-@include bp-sm {
+@include breakpoint(small) {
 	.row {
 		&.sm-reverse {
 			flex-direction: row-reverse;
@@ -167,7 +167,7 @@
 	}
 }
 
-@include bp-md {
+@include breakpoint(medium) {
 	.container {
 		width: pxtorem(750px);
 	}
@@ -244,7 +244,7 @@
 	}
 }
 
-@include bp-lg {
+@include breakpoint(large) {
 	.container {
 		width: pxtorem(970px);
 	}
@@ -319,7 +319,7 @@
 	}
 }
 
-@include bp-xl {
+@include breakpoint(xlarge) {
 	.container {
 		width: pxtorem(1170px);
 	}

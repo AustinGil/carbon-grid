@@ -1,3 +1,4 @@
+// Default HTML font size used for rem unit calculations
 $remBase: 16px;
 
 // Functions
@@ -7,41 +8,33 @@ $remBase: 16px;
 	@return #{$remSize}rem;
 }
 
-// Media Queries
-$breakpoint-sm: pxtorem(576px);
-$breakpoint-md: pxtorem(768px);
-$breakpoint-lg: pxtorem(992px);
-$breakpoint-xl: pxtorem(1200px);
-
-@mixin bp-xs {
-	@media (min-width: #{$breakpoint-xs}) {
-		@content;
-	}
-}
-
-@mixin bp-sm {
-	@media (min-width: #{$breakpoint-sm}) {
-		@content;
-	}
-}
-
-@mixin bp-md {
-	@media (min-width: #{$breakpoint-md}) {
-		@content;
-	}
-}
-
-@mixin bp-lg {
-	@media (min-width: #{$breakpoint-lg}) {
-		@content;
-	}
-}
-
-@mixin bp-xl {
-	@media (min-width: #{$breakpoint-xl}) {
-		@content;
-	}
-}
-
 // Variables
 $spacing: pxtorem(15px);
+$bp-small: pxtorem(576px);
+$bp-medium: pxtorem(768px);
+$bp-large: pxtorem(992px);
+$bp-xlarge: pxtorem(1200px);
+
+// Mixins
+@mixin breakpoint($bp) {
+	@if $bp == small {
+		@media (max-width: $bp-small) { @content; }
+	}
+
+	@else if $bp == medium {
+		@media (min-width: $bp-medium) { @content; }
+	}
+
+	@else if $bp == large {
+		@media (min-width: $bp-large) { @content; }
+	}
+
+	@else if $bp == xlarge {
+		@media (min-width: $bp-xlarge) { @content; }
+	}
+
+	@else {
+		// @warn "Breakpoint mixin supports: small, medium, large, xlarge";
+		@media (min-width: $bp) { @content; }
+	}
+}
