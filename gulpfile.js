@@ -11,13 +11,14 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
+const gulpStylelint = require('gulp-stylelint');
 
 
 // Development Tasks 
 // -----------------
 
 // Start browserSync server
-gulp.task('browserSync', function() {
+gulp.task('browserSync', function () {
   browserSync({
     server: {
       baseDir: ''
@@ -25,15 +26,15 @@ gulp.task('browserSync', function() {
   })
 })
 
-gulp.task('sass', function() {
+gulp.task('sass', function () {
   return gulp.src('src/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
     .pipe(sourcemaps.init())
-      .pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
-      .pipe(autoprefixer({
-              browsers: ['last 2 versions'],
-              cascade: false
-          }))
-      .pipe(cssnano())
+    .pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(cssnano())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('dist/css')) // Outputs it in the css folder
     .pipe(browserSync.reload({ // Reloading with Browser Sync
@@ -41,9 +42,18 @@ gulp.task('sass', function() {
     }));
 })
 
+gulp.task('lint-css', function lintCssTask() {
+  return gulp.src('src/scss/**/*.scss')
+    .pipe(gulpStylelint({
+      reporters: [
+        { formatter: 'string', console: true }
+      ]
+    }));
+});
+
 // Watchers
-gulp.task('watch', function() {
-  gulp.watch('src/scss/**/*.scss', ['sass']);
+gulp.task('watch', function () {
+  gulp.watch('src/scss/**/*.scss', ['lint-css', 'sass']);
   gulp.watch('index.html', browserSync.reload);
   gulp.watch('src/js/**/*.js', browserSync.reload);
 })
@@ -52,7 +62,7 @@ gulp.task('watch', function() {
 // ------------------
 
 // Optimizing CSS and JavaScript 
-gulp.task('useref', function() {
+gulp.task('useref', function () {
 
   return gulp.src('src/*.html')
     .pipe(useref())
@@ -62,7 +72,7 @@ gulp.task('useref', function() {
 });
 
 // Optimizing Images 
-gulp.task('images', function() {
+gulp.task('images', function () {
   return gulp.src('src/images/**/*.+(png|jpg|jpeg|gif|svg)')
     // Caching images that ran through imagemin
     .pipe(cache(imagemin({
@@ -72,32 +82,32 @@ gulp.task('images', function() {
 });
 
 // Copying fonts 
-gulp.task('fonts', function() {
+gulp.task('fonts', function () {
   return gulp.src('src/fonts/**/*')
     .pipe(gulp.dest('dist/fonts'))
 })
 
 // Cleaning 
-gulp.task('clean', function() {
-  return del.sync('dist').then(function(cb) {
+gulp.task('clean', function () {
+  return del.sync('dist').then(function (cb) {
     return cache.clearAll(cb);
   });
 })
 
-gulp.task('clean:dist', function() {
+gulp.task('clean:dist', function () {
   return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
 });
 
 // Build Sequences
 // ---------------
 
-gulp.task('default', function(callback) {
+gulp.task('default', function (callback) {
   runSequence(['sass', 'browserSync'], 'watch',
     callback
   )
 })
 
-gulp.task('build', function(callback) {
+gulp.task('build', function (callback) {
   runSequence(
     'clean:dist',
     'sass',
