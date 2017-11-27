@@ -3,7 +3,6 @@
 
 .container,
 .container-fluid {
-	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: $spacing;
@@ -39,52 +38,42 @@
 	// Widths
 	&.xs-20 {
 		flex: 0 0 20%;
-		max-width: 20%;
 	}
 
 	&.xs-25 {
 		flex: 0 0 25%;
-		max-width: 25%;
 	}
 
 	&.xs-33 {
 		flex: 0 0 1/3*100%;
-		max-width: 1/3*100%;
 	}
 
 	&.xs-40 {
 		flex: 0 0 40%;
-		max-width: 40%;
 	}
 
 	&.xs-50 {
 		flex: 0 0 50%;
-		max-width: 50%;
 	}
 
 	&.xs-60 {
 		flex: 0 0 60%;
-		max-width: 60%;
 	}
 
 	&.xs-67 {
 		flex: 0 0 2/3*100%;
-		max-width: 2/3*100%;
 	}
 
 	&.xs-75 {
 		flex: 0 0 75%;
-		max-width: 75%;
 	}
 
 	&.xs-80 {
 		flex: 0 0 80%;
-		max-width: 80%;
 	}
 
 	&.xs-100 {
 		flex: 0 0 100%;
-		max-width: 100%;
 	}
 
 	&.xs-auto {
@@ -118,52 +107,42 @@
 	.column {
 		&.sm-20 {
 			flex: 0 0 20%;
-			max-width: 20%;
 		}
 
 		&.sm-25 {
 			flex: 0 0 25%;
-			max-width: 25%;
 		}
 
 		&.sm-33 {
 			flex: 0 0 1/3*100%;
-			max-width: 1/3*100%;
 		}
 
 		&.sm-40 {
 			flex: 0 0 40%;
-			max-width: 40%;
 		}
 
 		&.sm-50 {
 			flex: 0 0 50%;
-			max-width: 50%;
 		}
 
 		&.sm-60 {
 			flex: 0 0 60%;
-			max-width: 60%;
 		}
 
 		&.sm-67 {
 			flex: 0 0 2/3*100%;
-			max-width: 2/3*100%;
 		}
 
 		&.sm-75 {
 			flex: 0 0 75%;
-			max-width: 75%;
 		}
 
 		&.sm-80 {
 			flex: 0 0 80%;
-			max-width: 80%;
 		}
 
 		&.sm-100 {
 			flex: 0 0 100%;
-			max-width: 100%;
 		}
 
 		&.sm-auto {
@@ -205,52 +184,42 @@
 		// Widths
 		&.md-20 {
 			flex: 0 0 20%;
-			max-width: 20%;
 		}
 
 		&.md-25 {
 			flex: 0 0 25%;
-			max-width: 25%;
 		}
 
 		&.md-33 {
 			flex: 0 0 1/3*100%;
-			max-width: 1/3*100%;
 		}
 
 		&.md-40 {
 			flex: 0 0 40%;
-			max-width: 40%;
 		}
 
 		&.md-50 {
 			flex: 0 0 50%;
-			max-width: 50%;
 		}
 
 		&.md-60 {
 			flex: 0 0 60%;
-			max-width: 60%;
 		}
 
 		&.md-67 {
 			flex: 0 0 2/3*100%;
-			max-width: 2/3*100%;
 		}
 
 		&.md-75 {
 			flex: 0 0 75%;
-			max-width: 75%;
 		}
 
 		&.md-80 {
 			flex: 0 0 80%;
-			max-width: 80%;
 		}
 
 		&.md-100 {
 			flex: 0 0 100%;
-			max-width: 100%;
 		}
 
 		&.md-auto {
@@ -290,52 +259,42 @@
 		// Widths
 		&.lg-20 {
 			flex: 0 0 20%;
-			max-width: 20%;
 		}
 
 		&.lg-25 {
 			flex: 0 0 25%;
-			max-width: 25%;
 		}
 
 		&.lg-33 {
 			flex: 0 0 1/3*100%;
-			max-width: 1/3*100%;
 		}
 
 		&.lg-40 {
 			flex: 0 0 40%;
-			max-width: 40%;
 		}
 
 		&.lg-50 {
 			flex: 0 0 50%;
-			max-width: 50%;
 		}
 
 		&.lg-60 {
 			flex: 0 0 60%;
-			max-width: 60%;
 		}
 
 		&.lg-67 {
 			flex: 0 0 2/3*100%;
-			max-width: 2/3*100%;
 		}
 
 		&.lg-75 {
 			flex: 0 0 75%;
-			max-width: 75%;
 		}
 
 		&.lg-80 {
 			flex: 0 0 80%;
-			max-width: 80%;
 		}
 
 		&.lg-100 {
 			flex: 0 0 100%;
-			max-width: 100%;
 		}
 
 		&.lg-auto {
@@ -375,52 +334,42 @@
 		// Widths
 		&.xl-20 {
 			flex: 0 0 20%;
-			max-width: 20%;
 		}
 
 		&.xl-25 {
 			flex: 0 0 25%;
-			max-width: 25%;
 		}
 
 		&.xl-33 {
 			flex: 0 0 1/3*100%;
-			max-width: 1/3*100%;
 		}
 
 		&.xl-40 {
 			flex: 0 0 40%;
-			max-width: 40%;
 		}
 
 		&.xl-50 {
 			flex: 0 0 50%;
-			max-width: 50%;
 		}
 
 		&.xl-60 {
 			flex: 0 0 60%;
-			max-width: 60%;
 		}
 
 		&.xl-67 {
 			flex: 0 0 2/3*100%;
-			max-width: 2/3*100%;
 		}
 
 		&.xl-75 {
 			flex: 0 0 75%;
-			max-width: 75%;
 		}
 
 		&.xl-80 {
 			flex: 0 0 80%;
-			max-width: 80%;
 		}
 
 		&.xl-100 {
 			flex: 0 0 100%;
-			max-width: 100%;
 		}
 
 		&.xl-auto {
