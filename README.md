@@ -8,7 +8,7 @@ Carbon Grid was inspired by some of the most popular grid systems, but built to 
 Intro: Carbon Grid uses flexbox which is awesome and can do a lot, but this system is designed to only address the most common layout issues. If you need very specific flex features it's very easy to expand on the base styles. Flexbox is a relatively new addition to CSS, so make sure you check the browser support before using. It's been tested back to IE 9 and seems to work well.
 
 **Download:**
-[https://raw.githubusercontent.com/Stegosource/carbon-grid/master/dist/css/carbon-grid.css](https://stegosource.github.io/carbon-grid/)
+[https://raw.githubusercontent.com/Stegosource/carbon-grid/master/dist/css/carbon-grid.css](http://carbon-grid.netlify.com/)
 
 **NPM:**
 ```
@@ -27,4 +27,4 @@ bower install carbon-grid --save
 
 ### Documentation
 
-To learn how to use Carbon Grid, check out the documentation at [https://stegosource.github.io/carbon-grid/](https://stegosource.github.io/carbon-grid/).
+To learn how to use Carbon Grid, check out the documentation at [http://carbon-grid.netlify.com/](http://carbon-grid.netlify.com/).
